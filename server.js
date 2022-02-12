@@ -3,6 +3,7 @@
  const cors = require('cors')
  const routes = require('./ROUTES')
  require('dotenv').config()
+ require('./DATABASE/DBconnection')
  const port = process.env.PORT
 
  app.use(bodyParser.json())
