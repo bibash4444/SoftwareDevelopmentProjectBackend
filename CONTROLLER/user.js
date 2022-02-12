@@ -47,6 +47,7 @@ module.exports = {
                         fname: req.body.fname,
                         lname: req.body.lname,
                         email: req.body.email,
+                        phonenumber: req.body.phonenumber,
                         password: hashedPassword,
                     }).then(user => {
                         res.status(200).json({
