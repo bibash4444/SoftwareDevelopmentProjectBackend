@@ -1,9 +1,8 @@
-const bcrypt = require('bcrypt')
-const user = require('../MODELS/user')
-const jwt = require('jsonwebtoken')
-const e = require('express')
-require('dotenv').config()
-
+const bcrypt = require("bcrypt");
+const user = require("../MODELS/user");
+const jwt = require("jsonwebtoken");
+const e = require("express");
+require("dotenv").config();
 
 module.exports = {
 
