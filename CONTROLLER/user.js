@@ -53,7 +53,7 @@ module.exports = {
                         res.status(200).json({
                             success: true,
                             msg: 'Account created successfully'
-                        }).catch(err)
+                        })
                     })
                 })
             }
