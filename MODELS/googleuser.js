@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const userSchema = new mongoose.Schema({
+const googleuserSchema = new mongoose.Schema({
     fname: {
         type: String,
         required: true
@@ -17,17 +17,18 @@ const userSchema = new mongoose.Schema({
     },
     phonenumber: {
         type: String,
-        required: true
+        default: null,
     },
-    password: {
+    googleId: {
         type: String,
         required: true
     },
+
     imageUrl: {
         type: String,
-        default: null
+        required: true
     }
 })
 
-const user = mongoose.model('user', userSchema)
-module.exports = user
+const googleuser = mongoose.model('googleuser', googleuserSchema)
+module.exports = googleuser
