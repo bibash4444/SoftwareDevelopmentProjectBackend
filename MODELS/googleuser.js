@@ -27,7 +27,9 @@ const googleuserSchema = new mongoose.Schema({
     imageUrl: {
         type: String,
         required: true
-    }
+    },
+
+
 })
 
 const googleuser = mongoose.model('googleuser', googleuserSchema)

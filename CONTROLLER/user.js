@@ -81,6 +81,7 @@ module.exports = {
                 googleId: req.body.googleId,
                 imageUrl: req.body.imageUrl
             }, { upsert: true }).then((data) => {
+                console.log(data)
                 res.status(200).json({
                     success: true,
                     msg: 'Login Success'
